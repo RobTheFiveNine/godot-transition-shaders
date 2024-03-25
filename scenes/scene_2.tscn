@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyr51n7v6f478"]
+
+[ext_resource type="Script" path="res://scenes/scripts/scene.gd" id="1_6u8vw"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qb6cj"]
+
+[node name="Scene2" type="Node3D"]
+script = ExtResource("1_6u8vw")
+next_scene = "res://scenes/scene_1.tscn"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_qb6cj")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.919135, -0.255845, 0.299556, 0, 0.760406, 0.649448, -0.393942, -0.596931, 0.698916, 1.005, 1.725, 2.033)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.989293, -0.0472211, 0.138094, 0, 0.94621, 0.323554, -0.145945, -0.32009, 0.936078, 0, 2.82452, 2.22566)
