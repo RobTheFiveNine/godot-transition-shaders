@@ -6,6 +6,7 @@
 
 [node name="Scene1" type="Node3D"]
 script = ExtResource("1_5qaie")
+emits_loaded_signal = false
 next_scene = "res://scenes/scene_2.tscn"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

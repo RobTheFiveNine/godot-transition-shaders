@@ -3,7 +3,12 @@ extends Node3D
 
 signal loaded()
 
+@export var emits_loaded_signal: bool = true
 @export_file("*.tscn") var next_scene: String
+
+
+func _ready() -> void:
+	print(SceneManager.current_scene)
 
 
 func _process(_delta: float) -> void:
